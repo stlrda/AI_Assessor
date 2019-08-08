@@ -1,0 +1,19 @@
+#download prcl.mdb and load into prcl_db dataframe
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/prcl.zip", "prcl.zip")
+unzip("prcl.zip")
+prcl_db <- mdb.get('prcl.mdb')
+file.remove(c("prcl.mdb","prcl.zip"))
+
+#download bldginsp.mdb and load into bldginsp_db dataframe
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/bldginsp.zip", "bldginsp.zip")
+unzip("bldginsp.zip")
+bldginsp_db <- mdb.get('bldginsp.mdb')
+file.remove(c("bldginsp.mdb","bldginsp.zip"))
+
+#download prmbdo.mdb and load into prmbdo_db dataframe
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/prmbdo.zip", "prmbdo.zip")
+unzip("prmbdo.zip")
+prmbdo_db <- mdb.get('prmbdo.mdb')
+file.remove(c("prmbdo.mdb","prmcode.mdb","prmbdo.zip"))
+
+            
