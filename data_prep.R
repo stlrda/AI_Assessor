@@ -16,4 +16,8 @@ unzip("prmbdo.zip")
 prmbdo_db <- mdb.get('prmbdo.mdb')
 file.remove(c("prmbdo.mdb","prmcode.mdb","prmbdo.zip"))
 
-            
+
+#download forestry-maintenance-properties.csv and load into forestry_maintenance_properties tibble
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/forestry-maintenance-properties.csv", "forestry-maintenance-properties.csv")
+forestry_maintenance_properties <- read_csv('forestry-maintenance-properties.csv', col_names = TRUE)
+file.remove("forestry-maintenance-properties.csv")
