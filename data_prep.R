@@ -23,6 +23,12 @@ prmemp_db <- mdb.get('prmemp.mdb')
 prmcode_db <- mdb.get('prmcode.mdb')
 file.remove(c("prmemp.mdb","prmcode.mdb","prmemp.zip"))
 
+#download prclsale.mdb and load into prmemp_db dataframe
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/prclsale.zip", "prclsale.zip")
+unzip("prclsale.zip")
+prclsale_db <- mdb.get('prclsale.mdb')
+file.remove(c("prclsale.mdb","prclsale.zip"))
+
 #download forestry-maintenance-properties.csv and load into forestry_maintenance_properties tibble
 download.file("https://www.stlouis-mo.gov/data/upload/data-files/forestry-maintenance-properties.csv", "forestry-maintenance-properties.csv")
 forestry_maintenance_properties <- read_csv('forestry-maintenance-properties.csv', col_names = TRUE)
