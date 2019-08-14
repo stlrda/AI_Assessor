@@ -1,35 +1,37 @@
-#download prcl.mdb and load into prcl_db dataframe
+#download prcl.mdb and load tables into lists prefixed with prcl.
 download.file("https://www.stlouis-mo.gov/data/upload/data-files/prcl.zip", "prcl.zip")
 unzip("prcl.zip")
 prcl_db <- mdb.get('prcl.mdb')
+list2env(setNames(prcl_db, paste0("prcl.", names(prcl_db))), .GlobalEnv)
+remove(prcl_db)
 file.remove(c("prcl.mdb","prcl.zip"))
 
-#download bldginsp.mdb and load into bldginsp_db dataframe
+#download bldginsp.mdb and load tables into lists prefixed with bldginsp.
 download.file("https://www.stlouis-mo.gov/data/upload/data-files/bldginsp.zip", "bldginsp.zip")
 unzip("bldginsp.zip")
 bldginsp_db <- mdb.get('bldginsp.mdb')
+list2env(setNames(bldginsp_db, paste0("bldginsp.", names(bldginsp_db))), .GlobalEnv)
+remove(bldginsp_db)
 file.remove(c("bldginsp.mdb","bldginsp.zip"))
 
-#download prmbdo.mdb and load into prmbdo_db dataframe
+#download prmbdo.mdb and load tables into lists prefixed with prmbdo.
 download.file("https://www.stlouis-mo.gov/data/upload/data-files/prmbdo.zip", "prmbdo.zip")
 unzip("prmbdo.zip")
 prmbdo_db <- mdb.get('prmbdo.mdb')
-file.remove(c("prmbdo.mdb","prmcode.mdb","prmbdo.zip"))
+prmcode_db <- mdb.get('prmcode.mdb')
+list2env(setNames(prmbdo_db, paste0("prmbdo.", names(prmbdo_db))), .GlobalEnv)
+list2env(setNames(prmcode_db, paste0("prmcode.", names(prmcode_db))), .GlobalEnv)
+remove(prmbdo_db)
+remove(prmcode_db)
+file.remove(c("prmbdo.mdb","prmbdo.zip", 'prmcode.mdb'))
 
-#download prmbdo.mdb and load into prmemp_db dataframe
+#download prmemp.mdb and load tables into lists prefixed with prmemp.
 download.file("https://www.stlouis-mo.gov/data/upload/data-files/prmemp.zip", "prmemp.zip")
 unzip("prmemp.zip")
 prmemp_db <- mdb.get('prmemp.mdb')
-prmcode_db <- mdb.get('prmcode.mdb')
-file.remove(c("prmemp.mdb","prmcode.mdb","prmemp.zip"))
-
-#download prclsale.mdb and load into prmemp_db dataframe
-download.file("https://www.stlouis-mo.gov/data/upload/data-files/prclsale.zip", "prclsale.zip")
-unzip("prclsale.zip")
-prclsale_db <- mdb.get('prclsale.mdb')
-file.remove(c("prclsale.mdb","prclsale.zip"))
-
-#download forestry-maintenance-properties.csv and load into forestry_maintenance_properties tibble
-download.file("https://www.stlouis-mo.gov/data/upload/data-files/forestry-maintenance-properties.csv", "forestry-maintenance-properties.csv")
-forestry_maintenance_properties <- read_csv('forestry-maintenance-properties.csv', col_names = TRUE)
-file.remove("forestry-maintenance-properties.csv")
+prmcode2_db <- mdb.get('prmcode.mdb')
+list2env(setNames(prmemp_db, paste0("prmemp.", names(prmemp_db))), .GlobalEnv)
+list2env(setNames(prmcode2_db, paste0("prmcode2.", names(prmcode2_db))), .GlobalEnv)
+remove(prmemp_db)
+remove(prmcode2_db)
+file.remove(c("prmemp.mdb","prmemp.zip", 'prmcode.mdb'))
