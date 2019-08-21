@@ -1,2 +1,5 @@
 prcl.BldgCom.subset <- select(prcl.BldgCom, Parcel, BldgCategory, BldgType, GroundFloorArea, ComExtWallType,ComStoriesCode, YearBuilt, ComConstType, TotApts, NbrOfAptsEff, NbrOfApts1Br, NbrOfApts2Br, NbrOfApts3Br, NbrOfAptsOther)
-prcl.BldgRes.subset <- select(prcl.BldgRes,)
+prcl.BldgRes.subset <- select(prcl.BldgRes, Parcel, ResOccType, BsmtType, BsmtFinishType, BsmntAreaFinished, BsmtAreaPartial,ResExtWallType, LivingAreaTotal, LivingAreaAtGrade, LivingAreaUpDown, RoomArea, ResStoriesCode, FullBaths, HalfBaths, AirCondCentral, AirCondWindow, CentralHeating, Attic, Garage1, Garage2, Carport1, Carport2, YearBuilt, ResModelCode)
+prcl.BldgSec.subset <- select(prcl.BldgSect, Parcel, SectCategory, SectType, FramingType, ExcavType, ExtWallType, LevelFrom, LevelTo, StoryHeight, Area, FoundationType, RoofType, RoofConst1, RoofConst2, RoofConst3, RoofConst4, Heating, AirCondCentral, AircondWindow, Electricity, FireProtection, Elevator, BsmtStoryHeight, BsmtNbrOfStories, BsmtAreaFinished, BsmtAreaUnfin, BsmtGarageArea)
+prcl.Prcl.subset <- select(prcl.Prcl, Parcel, AsrClassCode, AsrLandUse1, AsrLanduse2, SpecBusDist, SpecBusDist2, TIFDist, Frontage, LandArea, AsdLand, AsdImprove, AsdTotal, BillLand, BillImprove, BillTotal, APRLand, CostAprImprove, AsmtAppealYear, AsmtAppealNum, AsmAppealType, PriorAsdDate, PriorAsdLand, PriorAsdImprove, PriorAsdTotal)
+
