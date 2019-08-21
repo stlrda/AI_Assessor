@@ -1,0 +1,2 @@
+prcl.BldgCom.subset <- select(prcl.BldgCom, Parcel, BldgCategory, BldgType, GroundFloorArea, ComExtWallType,ComStoriesCode, YearBuilt, ComConstType, TotApts, NbrOfAptsEff, NbrOfApts1Br, NbrOfApts2Br, NbrOfApts3Br, NbrOfAptsOther)
+prcl.BldgRes.subset <- select(prcl.BldgRes,)
