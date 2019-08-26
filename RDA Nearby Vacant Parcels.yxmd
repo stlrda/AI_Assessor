@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>finalvacantall_20180707.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="FID" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="HANDLE" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="SITEADDR" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerCat" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_Final" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_Final" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_A" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_B" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_C" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_D" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_E" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_F" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_A" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_B" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_C" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_D" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_E" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB_F" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="BD_VB17" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LU1010" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="PrclHasBld" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="For_VB18" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="For_VL18" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_VL" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_VB" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_GL" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="DP_S2016" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="BP_S2016" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OP_S2016" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CondStruc" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CondBU" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="TaxBalYear" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="YrsTaxDeli" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="TaxBal" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForPropCat" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForBU_10" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForBU_2" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForBU_5" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForMC_10" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForMC_2" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForMC_5" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForVBRP_10" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForVBRP_2" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForVBRP_5" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForYard_10" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForYard_2" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ForYard_5" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_EnterD" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_AqYear" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_Tenure" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_Usage" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_AqType" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LRA_Status" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="TD3" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="TD5" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="YrsVacant" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="BldgsCom" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComCat" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComType" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComGrdFlr" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComStories" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComYrBlt" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComConst" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ComApts" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="BldgsRes" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResUnits" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResOccType" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResBsmt" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResBmFin" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResExtWall" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResLivArea" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResStories" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResFullBat" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResHlfBath" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResAC" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResACwin" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResCH" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResAttic" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResGarage" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResYrBlt" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CityBlock" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Parcel" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerCode" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ParcelID" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LowAddNum" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="LowAddSuf" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="HighAddNum" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="HighAddSuf" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="StPreDir" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="StName" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="StType" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="StSufDir" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerName" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerName2" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerAddr" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerCity" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerState" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OwnerZIP" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AsrClassCo" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AsrLandUse" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="SpecBusDis" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="SpecBusD_1" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="TIFDist" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AsdLand" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AsdImprove" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AsdTotal" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AprLand" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CostAprImp" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CDALandUse" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Zoning" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResSalePri" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ResSaleDat" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VacBldgYea" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="GeoCityBlo" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Ward10" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Precinct10" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Nbrhd" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CDADist" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CDASubDist" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="PoliceDist" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CensTract1" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="CensBlock1" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="HouseConsD" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="ZIP" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="OnFloodBlo" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="GisCityBLo" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="GisParcel" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="GisOwnerCo" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Parcel9" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Owner" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_G" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="BD_VB18" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL_MCK" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VB" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="NC" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="SL" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VL" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="HandleDbl" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Frontage" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="AsrNbrhd" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Violations" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="Acres" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="SqFt" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="NHD_NAME" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+            <Field name="VacCatText" size="254" source="File: C:\Users\Administrator\Desktop\RDA\finalvacantall_20180707.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="12">C:\Users\Administrator\Desktop\RDA\prcl_shape\prcl_shape\prcl.shp</File>
+          <FormatSpecificOptions>
+            <Projection />
+            <AllStrings>False</AllStrings>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>prcl.shp</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="HANDLE" size="16" source="File: C:\Users\Administrator\Desktop\RDA\prcl_shape\prcl_shape\prcl.shp" type="WString" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\Administrator\Desktop\RDA\prcl_shape\prcl_shape\prcl.shp" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="HANDLE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="HANDLE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_HANDLE" selected="True" rename="VACANT_HANDLE" input="Left_" />
+                <SelectField field="Right_HANDLE" selected="False" rename="Right_HANDLE" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
+        <Position x="258" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="SpatialObj" />
+          <SelectedItems>
+            <Item name="CentroidObj" />
+          </SelectedItems>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="HANDLE" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="498" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>NPercent</Mode>
+          <N>100</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 100%</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="690" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Centroid" />
+          <Universe SpatialObj="Centroid" />
+          <HowMany value="5000" />
+          <MaxDistance value="25" />
+          <MaxDistanceUnits>Kilometers</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Universe_SpatialObj" selected="True" rename="Universe_SpatialObj" input="Universe_" />
+                <SelectField field="Universe_Centroid" selected="True" rename="Universe_Centroid" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="798" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="906" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="HANDLE" selected="True" />
+            <SelectField field="VACANT_HANDLE" selected="True" />
+            <SelectField field="FindNearestRank" selected="True" />
+            <SelectField field="DistanceKilometers" selected="True" />
+            <SelectField field="Direction" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1074" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([DistanceKilometers], 0.1)" field="DistanceKilometersRounded" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DistanceKilometersRounded = Round([DistanceKilometers], 0.1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1218" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="HANDLE" action="GroupBy" rename="HANDLE" />
+            <SummarizeField field="DistanceKilometersRounded" action="GroupBy" rename="DistanceKilometersRounded" />
+            <SummarizeField field="DistanceKilometersRounded" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1350" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="HANDLE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="HANDLE" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_HANDLE" selected="False" rename="Right_HANDLE" input="Right_" />
+                <SelectField field="Right_Centroid" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
+        <Position x="1230" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="SpatialObj" />
+          <SelectedItems>
+            <Item name="CentroidXY" />
+          </SelectedItems>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1325" y="17.00001" width="196.6827" height="324" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ntermediate Outputs</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1350" y="66.00001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\Administrator\Desktop\RDA\nearby vacant parcels\nearby vacant parcels summary.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>nearby vacant parcels summary.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1350" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\Administrator\Desktop\RDA\nearby vacant parcels\nearby vacant parcels summary.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>nearby vacant parcels summary.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1494" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\Administrator\Desktop\RDA\nearby vacant parcels\nearby vacant parcels summary with coordinates.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>nearby vacant parcels summary with coordinates.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1050" y="222" width="152.0632" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 31</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1075" y="271" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\Administrator\Desktop\RDA\nearby vacant parcels\nearby vacant parcels.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>nearby vacant parcels.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="12" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Matched" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Unmatched" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Join" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>RDA Nearby Vacant Parcels</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
