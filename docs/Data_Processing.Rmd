@@ -1,0 +1,39 @@
+---
+title: "AI Assessor"
+author: "Your Name"
+date: '(`r format(Sys.time(), "%B %d, %Y")`)'
+output: 
+  github_document: default
+  html_notebook: default 
+---
+
+## Introduction
+This notebook...
+
+## Dependencies
+This notebook requires...
+
+```{r load-packages}
+# tidyverse packages
+
+
+# other packages
+
+```
+
+## Load Data
+This notebook requires...
+
+```{r load-data}
+
+```
+
+## Part 1
+### Question 1
+A description of what your code should accomplish.
+
+```{r p1-q1}
+
+```
+
+A description of the results.
