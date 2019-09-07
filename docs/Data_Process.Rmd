@@ -1,0 +1,41 @@
+---
+title: "Data Processing"
+author: ""
+date: '(`r format(Sys.time(), "%B %d, %Y")`)'
+output: 
+  github_document: default
+  html_notebook: default 
+---
+
+## Introduction
+This notebook...
+
+## Dependencies
+This notebook requires a number of `R` packages:
+
+```{r load-packages}
+# tidyverse packages
+library(dplyr)        # data wrangling
+
+# other packages
+library(here)         # file path management
+```
+
+## Load Data
+This notebook requires the following raw data:
+
+```{r load-data}
+load(here("data", "raw", "prcl_db.rda"))
+```
+
+## Process Parcel Data
+
+```{r}
+prcl_BldgCom <- select(prcl_db$BldgCom, Parcel, BldgCategory, BldgType, 
+                              GroundFloorArea, ComExtWallType,ComStoriesCode, 
+                              YearBuilt, ComConstType, TotApts, NbrOfAptsEff, 
+                              NbrOfApts1Br, NbrOfApts2Br, NbrOfApts3Br, 
+                              NbrOfAptsOther)
+```
+
+
