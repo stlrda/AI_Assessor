@@ -1,5 +1,5 @@
 ---
-title: "Data Processing"
+title: "Data Access"
 author: ""
 date: '(`r format(Sys.time(), "%B %d, %Y")`)'
 output: 
@@ -8,7 +8,7 @@ output:
 ---
 
 ## Introduction
-This notebook creates the analytic data set used for this project.
+This notebook downloads and pre-processes the raw data sets used for this project.
 
 ## Dependencies
 This notebook requires a number of `R` packages:
@@ -19,22 +19,22 @@ library(dplyr)        # data wrangling
 library(readr)        # read/write csv files
 
 # other packages
-library(Hmisc)        # misc tools
+# library(Hmisc)        # misc tools
 ```
 
-## Load Data
-This notebook requires...
+## Load Vacancy Data
+
+
+## Download Data
+
 
 ```{r load-data}
 
 ```
 
-## Part 1
-### Question 1
-A description of what your code should accomplish.
 
-```{r p1-q1}
+## Write Data
 
-```
 
-A description of the results.
+
+
