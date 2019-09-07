@@ -1,6 +1,6 @@
 ---
-title: "AI Assessor"
-author: "Your Name"
+title: "Data Processing"
+author: ""
 date: '(`r format(Sys.time(), "%B %d, %Y")`)'
 output: 
   github_document: default
@@ -8,17 +8,18 @@ output:
 ---
 
 ## Introduction
-This notebook...
+This notebook creates the analytic data set used for this project.
 
 ## Dependencies
-This notebook requires...
+This notebook requires a number of `R` packages:
 
 ```{r load-packages}
 # tidyverse packages
-
+library(dplyr)        # data wrangling
+library(readr)        # read/write csv files
 
 # other packages
-
+library(Hmisc)        # misc tools
 ```
 
 ## Load Data

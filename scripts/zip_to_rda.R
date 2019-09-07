@@ -4,8 +4,8 @@
 zip2rda <- function(zip, csv, output){
   tmp <- tempdir()
   unzip(zip, csv, exdir = tmp)
-  csv <- read.csv(file.path(tmp, csv))
-  save(csv, file = output)
+  csv <- readr::read_csv(file.path(tmp, csv))
+  readr::write_csv(csv, path = output)
 }
 
 ## example usage
