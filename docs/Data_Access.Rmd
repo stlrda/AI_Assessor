@@ -47,25 +47,38 @@ save(vacant, file = here("data", "vacant.rda"))
 ```
 
 ## Download Data
-The reamining data sets are available 
+The reamining data sets are available via the City's Open Data website. Each will be downloaded, unzipped, and converted from the Microsoft Access format to `.rda` files.
 
-### 
+### Parcel Data
+First, we'll download and process the raw parcel data:
 
-```{r load-parcel-data}
+```{r parcel-data}
 # download
 download.file("https://www.stlouis-mo.gov/data/upload/data-files/prcl.zip", 
               file.path(tmp, "prcl.zip"))
+
+# extract
 unzip(file.path(tmp, "prcl.zip"), exdir = tmp)
 prcl_db <- Hmisc::mdb.get(file.path(tmp, "prcl.mdb"))
+
+# write
+save(prcl_db, file = here("data", "raw", "prcl_db.rda"))
 ```
 
+### Building Inspections
+Next, we'll download and process the raw building inspection data:
 
-## Write Data
+### prmbdo.zip
+
+
+### prmemp.zip
+
 
 
 ## Remove Temporary Directory
+Finally, we'll ensure that the temporary directory is cleared from the disk before finishing:
 
-```{r}
+```{r unlink}
 unlink(tmp)
 ```
 
