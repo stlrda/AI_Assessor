@@ -19,34 +19,44 @@ library(dplyr)        # data wrangling
 library(readr)        # read/write csv files
 
 # other packages
-library(here)
-# library(Hmisc)        # misc tools
+library(here)         # file path management
 ```
 
+Additionally, `Hmisc` is used below. It is not loaded here because it overwrites a large number of functions and methods and is used for one function only. It will be called with `Hmsic::mdb.get()`. You will also need `mdb-tools` installed on Unix/Linux machines for this function to work. On macOS - use `brew install mdbtools` to get that installed.
+
 ## Create Temporary Directory
+All of the data sets are going to be passed through a temporary directory to avoid creating intermediary files and objects. We'll create the temporary directory first, and continue to refer to the `tmp` path in subsequent functions:
 
 ```{r create-temp}
 tmp <- tempdir()
 ```
 
-
 ## Load Vacancy Data
+First, we'll load the vacancy data. They're stored in a zipped `.csv` file that can be found in `data/raw/nearby vacant parcels summary.zip`. The `.csv` is too large to store on GitHub without compression, so we'll unzip it into the temp directory, load it it into the global enviornment, and then save it as a compressed `R` data file (`.rda`):
 
-```{r}
+```{r vacancy-data}
+# unzip to temp
 unzip(here("data", "raw", "nearby vacant parcels summary.zip"), 
       "nearby vacant parcels summary.csv", exdir = tmp)
-vacant <- readr::read_csv(file.path(tmp, 
-       "nearby vacant parcels summary.csv"))
+
+# load data from temp
+vacant <- readr::read_csv(file.path(tmp, "nearby vacant parcels summary.csv"))
+
+# save as .rda
 save(vacant, file = here("data", "vacant.rda"))
 ```
 
-
-
 ## Download Data
+The reamining data sets are available 
 
+### 
 
-```{r load-data}
-
+```{r load-parcel-data}
+# download
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/prcl.zip", 
+              file.path(tmp, "prcl.zip"))
+unzip(file.path(tmp, "prcl.zip"), exdir = tmp)
+prcl_db <- Hmisc::mdb.get(file.path(tmp, "prcl.mdb"))
 ```
 
 
