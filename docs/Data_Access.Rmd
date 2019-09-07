@@ -19,10 +19,27 @@ library(dplyr)        # data wrangling
 library(readr)        # read/write csv files
 
 # other packages
+library(here)
 # library(Hmisc)        # misc tools
 ```
 
+## Create Temporary Directory
+
+```{r create-temp}
+tmp <- tempdir()
+```
+
+
 ## Load Vacancy Data
+
+```{r}
+unzip(here("data", "raw", "nearby vacant parcels summary.zip"), 
+      "nearby vacant parcels summary.csv", exdir = tmp)
+vacant <- readr::read_csv(file.path(tmp, 
+       "nearby vacant parcels summary.csv"))
+save(vacant, file = here("data", "vacant.rda"))
+```
+
 
 
 ## Download Data
@@ -36,5 +53,10 @@ library(readr)        # read/write csv files
 ## Write Data
 
 
+## Remove Temporary Directory
+
+```{r}
+unlink(tmp)
+```
 
 

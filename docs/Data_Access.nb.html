@@ -1760,20 +1760,56 @@ summary {
 <p>This notebook requires a number of <code>R</code> packages:</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIyB0aWR5dmVyc2UgcGFja2FnZXNcblxuXG4jIG90aGVyIHBhY2thZ2VzXG5cbmBgYFxuYGBgIn0= -->
-<pre class="r"><code>```r
-# tidyverse packages
-
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyB0aWR5dmVyc2UgcGFja2FnZXNcbmxpYnJhcnkoZHBseXIpICAgICAgICAjIGRhdGEgd3JhbmdsaW5nXG5saWJyYXJ5KHJlYWRyKSAgICAgICAgIyByZWFkL3dyaXRlIGNzdiBmaWxlc1xuXG4jIG90aGVyIHBhY2thZ2VzXG5saWJyYXJ5KGhlcmUpXG5gYGAifQ== -->
+<pre class="r"><code># tidyverse packages
+library(dplyr)        # data wrangling
+library(readr)        # read/write csv files
 
 # other packages
-</code></pre>
-<p>```</p>
+library(here)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiaGVyZSgpIHN0YXJ0cyBhdCAvVXNlcnMvY2hyaXMvR2l0SHViL2NocmlzLXByZW5lci9BSV9Bc3Nlc3NvclxuIn0= -->
+<pre><code>here() starts at /Users/chris/GitHub/chris-prener/AI_Assessor</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBsaWJyYXJ5KEhtaXNjKSAgICAgICAgIyBtaXNjIHRvb2xzXG5gYGAifQ== -->
+<pre class="r"><code># library(Hmisc)        # misc tools</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="create-temporary-directory" class="section level2">
+<h2>Create Temporary Directory</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudG1wIDwtIHRlbXBkaXIoKVxuYGBgIn0= -->
+<pre class="r"><code>tmp &lt;- tempdir()</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
 <div id="load-vacancy-data" class="section level2">
 <h2>Load Vacancy Data</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudW56aXAoaGVyZShcImRhdGFcIiwgXCJyYXdcIiwgXCJuZWFyYnkgdmFjYW50IHBhcmNlbHMgc3VtbWFyeS56aXBcIiksIFxuICAgICAgXCJuZWFyYnkgdmFjYW50IHBhcmNlbHMgc3VtbWFyeS5jc3ZcIiwgZXhkaXIgPSB0bXApXG52YWNhbnQgPC0gcmVhZHI6OnJlYWRfY3N2KGZpbGUucGF0aCh0bXAsIFxuICAgICAgIFwibmVhcmJ5IHZhY2FudCBwYXJjZWxzIHN1bW1hcnkuY3N2XCIpKVxuYGBgIn0= -->
+<pre class="r"><code>unzip(here(&quot;data&quot;, &quot;raw&quot;, &quot;nearby vacant parcels summary.zip&quot;), 
+      &quot;nearby vacant parcels summary.csv&quot;, exdir = tmp)
+vacant &lt;- readr::read_csv(file.path(tmp, 
+       &quot;nearby vacant parcels summary.csv&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBIQU5ETEUgPSBcdTAwMWJbMzJtY29sX2RvdWJsZSgpXHUwMDFiWzM5bSxcbiAgRGlzdGFuY2VLaWxvbWV0ZXJzUm91bmRlZCA9IFx1MDAxYlszMm1jb2xfZG91YmxlKClcdTAwMWJbMzltLFxuICBDb3VudCA9IFx1MDAxYlszMm1jb2xfZG91YmxlKClcdTAwMWJbMzltXG4pXG4ifQ== -->
+<pre><code>Parsed with column specification:
+cols(
+  HANDLE = [32mcol_double()[39m,
+  DistanceKilometersRounded = [32mcol_double()[39m,
+  Count = [32mcol_double()[39m
+)</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2F2ZSh2YWNhbnQsIGZpbGUgPSBoZXJlKFwiZGF0YVwiLCBcInZhY2FudC5yZGFcIikpXG5gYGAifQ== -->
+<pre class="r"><code>save(vacant, file = here(&quot;data&quot;, &quot;vacant.rda&quot;))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 </div>
 <div id="download-data" class="section level2">
 <h2>Download Data</h2>
@@ -1784,10 +1820,20 @@ summary {
 </div>
 <div id="write-data" class="section level2">
 <h2>Write Data</h2>
+</div>
+<div id="remove-temporary-directory" class="section level2">
+<h2>Remove Temporary Directory</h2>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudW5saW5rKHRtcClcbmBgYCJ9 -->
+<pre class="r"><code>unlink(tmp)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBBY2Nlc3MiCmF1dGhvcjogIiIKZGF0ZTogJyhgciBmb3JtYXQoU3lzLnRpbWUoKSwgIiVCICVkLCAlWSIpYCknCm91dHB1dDogCiAgZ2l0aHViX2RvY3VtZW50OiBkZWZhdWx0CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdCAKLS0tCgojIyBJbnRyb2R1Y3Rpb24KVGhpcyBub3RlYm9vayBkb3dubG9hZHMgYW5kIHByZS1wcm9jZXNzZXMgdGhlIHJhdyBkYXRhIHNldHMgdXNlZCBmb3IgdGhpcyBwcm9qZWN0LgoKIyMgRGVwZW5kZW5jaWVzClRoaXMgbm90ZWJvb2sgcmVxdWlyZXMgYSBudW1iZXIgb2YgYFJgIHBhY2thZ2VzOgoKYGBge3IgbG9hZC1wYWNrYWdlc30KIyB0aWR5dmVyc2UgcGFja2FnZXMKbGlicmFyeShkcGx5cikgICAgICAgICMgZGF0YSB3cmFuZ2xpbmcKbGlicmFyeShyZWFkcikgICAgICAgICMgcmVhZC93cml0ZSBjc3YgZmlsZXMKCiMgb3RoZXIgcGFja2FnZXMKIyBsaWJyYXJ5KEhtaXNjKSAgICAgICAgIyBtaXNjIHRvb2xzCmBgYAoKIyMgTG9hZCBWYWNhbmN5IERhdGEKCgojIyBEb3dubG9hZCBEYXRhCgoKYGBge3IgbG9hZC1kYXRhfQoKYGBgCgoKIyMgV3JpdGUgRGF0YQoKCgoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBBY2Nlc3MiCmF1dGhvcjogIiIKZGF0ZTogJyhgciBmb3JtYXQoU3lzLnRpbWUoKSwgIiVCICVkLCAlWSIpYCknCm91dHB1dDogCiAgZ2l0aHViX2RvY3VtZW50OiBkZWZhdWx0CiAgaHRtbF9ub3RlYm9vazogZGVmYXVsdCAKLS0tCgojIyBJbnRyb2R1Y3Rpb24KVGhpcyBub3RlYm9vayBkb3dubG9hZHMgYW5kIHByZS1wcm9jZXNzZXMgdGhlIHJhdyBkYXRhIHNldHMgdXNlZCBmb3IgdGhpcyBwcm9qZWN0LgoKIyMgRGVwZW5kZW5jaWVzClRoaXMgbm90ZWJvb2sgcmVxdWlyZXMgYSBudW1iZXIgb2YgYFJgIHBhY2thZ2VzOgoKYGBge3IgbG9hZC1wYWNrYWdlc30KIyB0aWR5dmVyc2UgcGFja2FnZXMKbGlicmFyeShkcGx5cikgICAgICAgICMgZGF0YSB3cmFuZ2xpbmcKbGlicmFyeShyZWFkcikgICAgICAgICMgcmVhZC93cml0ZSBjc3YgZmlsZXMKCiMgb3RoZXIgcGFja2FnZXMKbGlicmFyeShoZXJlKQojIGxpYnJhcnkoSG1pc2MpICAgICAgICAjIG1pc2MgdG9vbHMKYGBgCgojIyBDcmVhdGUgVGVtcG9yYXJ5IERpcmVjdG9yeQoKYGBge3IgY3JlYXRlLXRlbXB9CnRtcCA8LSB0ZW1wZGlyKCkKYGBgCgoKIyMgTG9hZCBWYWNhbmN5IERhdGEKCmBgYHtyfQp1bnppcChoZXJlKCJkYXRhIiwgInJhdyIsICJuZWFyYnkgdmFjYW50IHBhcmNlbHMgc3VtbWFyeS56aXAiKSwgCiAgICAgICJuZWFyYnkgdmFjYW50IHBhcmNlbHMgc3VtbWFyeS5jc3YiLCBleGRpciA9IHRtcCkKdmFjYW50IDwtIHJlYWRyOjpyZWFkX2NzdihmaWxlLnBhdGgodG1wLCAKICAgICAgICJuZWFyYnkgdmFjYW50IHBhcmNlbHMgc3VtbWFyeS5jc3YiKSkKc2F2ZSh2YWNhbnQsIGZpbGUgPSBoZXJlKCJkYXRhIiwgInZhY2FudC5yZGEiKSkKYGBgCgoKCiMjIERvd25sb2FkIERhdGEKCgpgYGB7ciBsb2FkLWRhdGF9CgpgYGAKCgojIyBXcml0ZSBEYXRhCgoKIyMgUmVtb3ZlIFRlbXBvcmFyeSBEaXJlY3RvcnkKCmBgYHtyfQp1bmxpbmsodG1wKQpgYGAKCgo=</div>
 
 
 
