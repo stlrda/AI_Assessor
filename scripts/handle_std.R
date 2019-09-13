@@ -26,16 +26,14 @@ std_handle <- function(string, from){
 }
 
 # Arguments with 0s are Not Required
-make_handle <- function(block, parcel, subBlock = 0, condoCode = 0, remove_dot = FALSE){
+make_handle <- function(block, parcel, condoCode = 0){
   # need to force lengths
-  block    <- sprintf("%05s", block) # includes block and sub block
+  block <- gsub("\\.", "", block)
+  
+  block    <- sprintf("%06s", block) # includes block and sub block ####.##
   parcel   <- sprintf("%03s", parcel)
   
-  handle <- paste0(block, subBlock, condoCode, parcel)
-  
-  if(remove_dot){
-    handle <- gsub("\\.", "", handle)
-  }
+  handle <- paste0(block, condoCode, parcel)
   
   return(handle)
 }
