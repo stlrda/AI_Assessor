@@ -16,7 +16,7 @@ std_handle <- function(string, from){
     
   }else if(from == "parcel11"){
 
-    handle <- substr(string, 1, 9)
+    handle <- substr(string, 1, 10)
     return(handle)
     
   }else{
