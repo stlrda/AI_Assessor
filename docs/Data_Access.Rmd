@@ -82,4 +82,3 @@ Finally, we'll ensure that the temporary directory is cleared from the disk befo
 unlink(tmp)
 ```
 
-

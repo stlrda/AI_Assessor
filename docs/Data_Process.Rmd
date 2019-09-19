@@ -38,4 +38,3 @@ prcl_BldgCom <- select(prcl_db$BldgCom, Parcel, BldgCategory, BldgType,
                               NbrOfAptsOther)
 ```
 
-
