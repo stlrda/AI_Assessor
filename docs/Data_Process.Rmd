@@ -36,5 +36,10 @@ prcl_BldgCom <- select(prcl_db$BldgCom, Parcel, BldgCategory, BldgType,
                               YearBuilt, ComConstType, TotApts, NbrOfAptsEff, 
                               NbrOfApts1Br, NbrOfApts2Br, NbrOfApts3Br, 
                               NbrOfAptsOther)
+prcl_BldgRes <- select(prcl_db$BldgRes, Parcel, ResOccType, BsmtType, BsmtFinishType, BsmtAreaFinished, ResExtWallType, LivingAreaTotal, LivingAReaAtGrade, LivingAreaUpDown, FullBaths, HalfBaths, AirCondCentral, AirCondWindow, CentralHeating, Attic, Garage1, Garage2, Carport1, Carport2, YearBuilt, ResModelCode, ResModelAdjCode)
+
+prcl_Prcl <- select(prcl_db$Prcl, Handle, AsrClassCode, AsrLandUse1, AsrLandUse2, Condominium, NbrOfUnits, NbrOfApts,Frontage, LandArea, AsdLand, AsdImprove, BillLand, BillImprove, AprLand, CostAprImprove, PriorAsdLand, PriorAsdImprove, PriorTaxAmt, CDALandUse1, CDLandUse2, Zoning, NbrOfBldgsRes, NbrOfBldgsCom, ResSalePrice, ResSaleDate)
+
+prcl_prclREAR <- select(prcl_db$PrclREAR, Parcel, LastUpdate, TaxBal, ComResCode, NbrOfSewerLines, SewerLineSplit)
 ```
 

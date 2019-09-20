@@ -47,15 +47,15 @@ save(vacant, file = here("data", "vacant.rda"))
 ```
 
 ## Download Data
-The reamining data sets are available via the City's Open Data website. Each will be downloaded, unzipped, and converted from the Microsoft Access format to `.rda` files.
+The remaining data sets are available via the City's Open Data website. Each will be downloaded, unzipped, and converted from the Microsoft Access format to `.rda` files.
+
 
 ### Parcel Data
 First, we'll download and process the raw parcel data:
 
 ```{r parcel-data}
 # download
-download.file("https://www.stlouis-mo.gov/data/upload/data-files/prcl.zip", 
-              file.path(tmp, "prcl.zip"))
+download.file("https://www.stlouis-mo.gov/data/upload/data-files/prcl.zip", file.path(tmp, "prcl.zip"))
 
 # extract
 unzip(file.path(tmp, "prcl.zip"), exdir = tmp)
