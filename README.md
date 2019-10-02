@@ -11,3 +11,10 @@ Data is obtained from the City of St. Louis. It is downloaded preceeding each an
 
 ### Contributions
 
+### Infrastructure
+- R will serve as the primary language in the development of this project.
+- Need to pick a ML library still
+- Docker container built from a Rocker image (Deployed to Azure pending credit allotment)
+
+### Architecture
+
