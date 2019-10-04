@@ -23,10 +23,11 @@ for(i in list.files(tmp, '.zip')){
 # Load Files into R Structures
 bldginsp <- mdb.get(file.path(tmp, 'bldginsp.mdb'))
 prcl     <- mdb.get(file.path(tmp, 'prcl.mdb'))
-prmbdo   <- mdb.get(file.path(tmp, 'prmbdo'))
-prmcode  <- mdb.get(file.path(tmp, 'prmcode'))
-prmemp   <- mdb.get(file.path(tmp, 'prmemp'))
+prmbdo   <- mdb.get(file.path(tmp, 'prmbdo.mdb'))
+prmcode  <- mdb.get(file.path(tmp, 'prmcode.mdb'))
+prmemp   <- mdb.get(file.path(tmp, 'prmemp.mdb'))
   
+vacancy <- read.csv(file.path(tmp, 'vacancy.csv'), stringsAsFactors = FALSE)
+
 parcels <- st_read(file.path(tmp, 'prcl.shp'))
 
-vacancy <- read.csv(file.path(tmp, 'vacancy.csv'), stringsAsFactors = FALSE)
