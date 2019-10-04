@@ -12,12 +12,9 @@ Data for this project comes from the City of St. Louis [Open Data website](https
 ### Architecture
 The project is structured as follows:
 ```
-├── AI_Assessor.Rproj
-├── README.md
 ├── data
 ├── model
 ├── report
-├── scripts
 └── visualize
 ```
 
