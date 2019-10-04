@@ -31,3 +31,6 @@ vacancy <- read.csv(file.path(tmp, 'vacancy.csv'), stringsAsFactors = FALSE)
 
 parcels <- st_read(file.path(tmp, 'prcl.shp'))
 
+# Save these objects into a Single RData File 
+# (For loading into cleaning process, and reproducing with each run/commit)
+save(bldginsp, prcl, prmbdo, prmcode, prmemp, parcels, vacancy, file = 'data/data.rda')
