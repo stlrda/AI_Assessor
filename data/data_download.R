@@ -29,7 +29,7 @@ prmemp   <- mdb.get(file.path(tmp, 'prmemp.mdb'))
   
 vacancy <- read.csv(file.path(tmp, 'vacancy.csv'), stringsAsFactors = FALSE)
 
-parcels <- st_read(file.path(tmp, 'prcl.shp'))
+parcels <- st_read(file.path(tmp, 'prcl.shp'), stringsAsFactors = FALSE)
 
 # Save these objects into a Single RData File 
 # (For loading into cleaning process, and reproducing with each run/commit)

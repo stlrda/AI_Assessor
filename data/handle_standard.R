@@ -1,17 +1,24 @@
 ## Script for Standardizing Parcel IDs (9-11) to Handle
 
+# (B)lock, sub (b)lock, (c)ondo, (p)arcel, (o)wner
+
+# Parcel9  | BBBB.bb ppp
+# Parcel11 | BBBB.bbcpppo
+# Handle   | BBBB.bbcppp
+
+
 # string -The string you want to change
 # from   -Either parcel9 or parcel11
 
 # Returns a handle 
-std_handle <- function(string, from){
+std_handle <- function(string, from, condoCode = 0){
 
   if(from == "parcel9"){
     
     block    <- substr(string, 1, 4)
     subBlock <- substr(string, 5, 6)
     parcel   <- substr(string, 7, 9)
-    handle <- paste0(block, subBlock, 0, parcel)
+    handle <- paste0(block, subBlock, condoCode, parcel)
     return(handle)
     
   }else if(from == "parcel11"){
