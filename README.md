@@ -3,6 +3,9 @@
 ### About
 This project is part of a [collaborative effort](https://www.datakind.org/blog/applying-ai-to-societal-challenges-in-us-cities-datakind-microsoft-launch-ai-accelerator) between DataKind and Microsoft to accelerate the use of AI in cities. In this project, we implement predictive models to evaluate the influence of vacancy on property value and tax revenue.
 
+### Participating
+Please read the [contribution workflow](https://github.com/stlrda/AI_Assessor/wiki/Contribution-Workflow) page in the wiki for an explanation of how we will be using this repository.
+
 ### Software
 The majority of this project is written in `R`.
 
